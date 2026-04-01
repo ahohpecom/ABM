@@ -1,0 +1,1 @@
+echo put C:\ABM\T1\HelloWorld.exe | sftp -i /home/aho/DEMO22 SUPER.AHO@DEMO22:/home/aho/ABM
