@@ -1,0 +1,6 @@
+*.docx
+*.pptx
+*.tmp
+T*/build/*
+T3/*.dep
+T3/*.lst
