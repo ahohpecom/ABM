@@ -1,4 +1,4 @@
-C:\MXSQLC\mxsqlc src\p3c.ec -c src\p3c.c -g moduleCatalog=SAMDBCAT -g moduleSchema=PERSNL -Q invokeCatalog=SAMDBCAT -Q invokeSchema=PERSNL -s DEMO22 -r 28650 -y SUPER.AHO -W \home\aho\DEMO22 -S \home\aho\ssl\ca.pem
+mxsqlc src\p3c.ec -c src\p3c.c -g moduleCatalog=SAMDBCAT -g moduleSchema=PERSNL -Q invokeCatalog=SAMDBCAT -Q invokeSchema=PERSNL -s DEMO22 -r 28650 -y SUPER.AHO -W \home\aho\DEMO22 -S \home\aho\ssl\ca.pem
 
 %COMP_ROOT%\usr\bin\c89 -Wextensions -c src/p3c.c -o build/p3c.o
 
@@ -7,9 +7,8 @@ REM use ^ as continuation character
 REM ---------------------------------
 %COMP_ROOT%\usr\bin\xld %COMP_ROOT%/usr/lib/ccpmainx.o build/p3c.o -o build/p3c.exe ^
  -set systype oss ^
- -lxcppcdll -lxcpp2dll -lxcredll ^
- -lxcrtldll -lxosskdll -lxi18ndll ^
- -lxicnvdll -lxclidll -lxtlh7dll
+ -lxcredll -lxcrtldll -lxosskdll ^
+ -lxi18ndll -lxicnvdll -lxclidll 
 
 REM ssh -i /home/aho/DEMO22 SUPER.AHO@DEMO22 "/usr/bin/xld /usr/lib/ccpmainx.o /home/aho/ABM/p3c.o -o /home/aho/ABM/p3c.exe -lxcredll -lxcrtldll -lxosskdll -lxi18ndll -lxicnvdll -lxclidll"
 

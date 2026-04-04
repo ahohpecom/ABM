@@ -1,4 +1,4 @@
-/* Hewlett Packard Enterprise NonStop(TM) SQL/MX C/C++ Preprocessor 3.8.2 generated C file. */
+/* Hewlett Packard Enterprise NonStop(TM) SQL/MX C/C++ Preprocessor 3.9.1 generated C file. */
 
 #ifdef __TANDEM
 #ifndef __ILP32
@@ -6,7 +6,7 @@
 #endif
 #endif
 
-#line 1 "C:\\MXSQLC\\\\include\\sqlcli.h"
+#line 1 "C:\\Program Files (x86)\\HPE SQL-MX C Preprocessor 3.9.1\\\\include\\sqlcli.h"
 /**********************************************************************
 // Copyright (c) 1994-1998, 2003, 2014, 2016, 2019-2023, Hewlett Packard Enterprise Development LP
 //
@@ -908,7 +908,8 @@ enum SQLATTR_TYPE {
   SQL_ATTR_COPY_STMT_ID_TO_DIAGS = -14,
   SQL_ATTR_PARENT_QID = -15,
   SQL_ATTR_STMT_TYPE = -16,
-  SQL_ATTR_LOB_REDRIVE = -17
+  SQL_ATTR_LOB_REDRIVE = -17,
+  SQL_ATTR_STREAM_QUERY = -18 /* Soln 10-221004-6340 */ 
 };
 
 enum LOB_REDRIVE_ATTR
@@ -2033,7 +2034,7 @@ SQLCLI_LIB_FUNC Int32 SQL_EXEC_GetCobolSQLSTATE(
 SQLCLI_LIB_FUNC Int32 SQL_EXEC_GETCOBOLSQLSTATE(
         /*OUT*/ char * sqlstate /* assumed to be char[5] */,
         /*IN*/  Int32 sqlcode);
-
+        
 #if defined (NA_MIPS) && (CLI_LIB)
 #pragma srlexports
 #endif
@@ -2683,13 +2684,13 @@ SQLCLI_LIB_FUNC Int32 SQL_EXEC_SetSessionInfo(SQLSESSION_INFO* info);
 
 #endif /*SQLCLI_HDR*/
 
-/* Hewlett Packard Enterprise NonStop(TM) SQL/MX C/C++ Preprocessor 3.8.2 -- main body of generated source. */
+/* Hewlett Packard Enterprise NonStop(TM) SQL/MX C/C++ Preprocessor 3.9.1 -- main body of generated source. */
 
 #pragma push warn
 #pragma nowarn
 static long __SQL_internal_retcode;
 #pragma pop warn
-extern SQLMODULE_ID __SQL_mod_123456095523554733;
+extern SQLMODULE_ID __SQL_mod_123456094600954997;
 #line 1 "C:\\ABM\\T3\\src\\p3c.ec"
 
 /***************************************************** 
@@ -2744,9 +2745,7 @@ void process_query (void);
     }jobcode;  
   }employee_rec;
 
- /* EXEC SQL  INVOKE job AS job_rec; */
-#line 50 "C:\\ABM\\T3\\src\\p3c.ec"
-/* Beginning of generated code for SQL INVOKE */
+ /* EXEC SQL  INVOKE job AS job_rec; *//* Beginning of generated code for SQL INVOKE */
 struct  job_rec{
   unsigned short jobcode;
   char /* CHARACTER SET ISO88591 */ jobdesc[19];
@@ -2780,7 +2779,7 @@ int main (void)
 #line 70 "C:\\ABM\\T3\\src\\p3c.ec"
 static struct SQLCLI_OBJ_ID __SQL_id0 = {
 #line 70 "C:\\ABM\\T3\\src\\p3c.ec"
-11, stmt_name, &__SQL_mod_123456095523554733, "SQLMX_DEFAULT_STATEMENT_4"
+11, stmt_name, &__SQL_mod_123456094600954997, "SQLMX_DEFAULT_STATEMENT_4"
 #line 70 "C:\\ABM\\T3\\src\\p3c.ec"
 ,0, 0, 
 #line 70 "C:\\ABM\\T3\\src\\p3c.ec"
@@ -2804,7 +2803,7 @@ SQL_EXEC_GetCSQLSTATE(SQLSTATE,SQLCODE);}
 #line 74 "C:\\ABM\\T3\\src\\p3c.ec"
 static struct SQLCLI_OBJ_ID __SQL_id0 = {
 #line 74 "C:\\ABM\\T3\\src\\p3c.ec"
-11, stmt_name, &__SQL_mod_123456095523554733, "SQLMX_DEFAULT_STATEMENT_5"
+11, stmt_name, &__SQL_mod_123456094600954997, "SQLMX_DEFAULT_STATEMENT_5"
 #line 74 "C:\\ABM\\T3\\src\\p3c.ec"
 ,0, 0, 
 #line 74 "C:\\ABM\\T3\\src\\p3c.ec"
@@ -2820,9 +2819,7 @@ SQL_EXEC_GetCSQLSTATE(SQLSTATE,SQLCODE);}
 #line 74 "C:\\ABM\\T3\\src\\p3c.ec"
 
 
-   printf("For this query session, %d employees records are found \n",
-#line 76 "C:\\ABM\\T3\\src\\p3c.ec"
-count);
+   printf("For this query session, %d employees records are found \n",count);
 
    exit(0);
 }
@@ -2864,7 +2861,7 @@ count);
 #line 102 "C:\\ABM\\T3\\src\\p3c.ec"
 static struct SQLCLI_OBJ_ID __SQL_id0 = {
 #line 102 "C:\\ABM\\T3\\src\\p3c.ec"
-11, stmt_name, &__SQL_mod_123456095523554733, "SQLMX_DEFAULT_STATEMENT_6"
+11, stmt_name, &__SQL_mod_123456094600954997, "SQLMX_DEFAULT_STATEMENT_6"
 #line 102 "C:\\ABM\\T3\\src\\p3c.ec"
 ,0, 0, 
 #line 102 "C:\\ABM\\T3\\src\\p3c.ec"
@@ -2872,14 +2869,14 @@ static struct SQLCLI_OBJ_ID __SQL_id0 = {
 #line 102 "C:\\ABM\\T3\\src\\p3c.ec"
 static struct SQLCLI_OBJ_ID __SQL_id1 = {
 #line 102 "C:\\ABM\\T3\\src\\p3c.ec"
-11, desc_name, &__SQL_mod_123456095523554733, 
+11, desc_name, &__SQL_mod_123456094600954997, 
 "SQLMX_DEFAULT_STATEMENT_6_0_IVAR",0, 0, 
 #line 102 "C:\\ABM\\T3\\src\\p3c.ec"
 32, 0, 0};
 #line 102 "C:\\ABM\\T3\\src\\p3c.ec"
 static struct SQLCLI_OBJ_ID __SQL_id2 = {
 #line 102 "C:\\ABM\\T3\\src\\p3c.ec"
-11, desc_name, &__SQL_mod_123456095523554733, 
+11, desc_name, &__SQL_mod_123456094600954997, 
 "SQLMX_DEFAULT_STATEMENT_6_0_OVAR",0, 0, 
 #line 102 "C:\\ABM\\T3\\src\\p3c.ec"
 32, 0, 0};
@@ -2916,7 +2913,7 @@ SQL_EXEC_GetCSQLSTATE(SQLSTATE,SQLCODE);}
 #line 121 "C:\\ABM\\T3\\src\\p3c.ec"
 static struct SQLCLI_OBJ_ID __SQL_id0 = {
 #line 121 "C:\\ABM\\T3\\src\\p3c.ec"
-11, stmt_name, &__SQL_mod_123456095523554733, "SQLMX_DEFAULT_STATEMENT_7"
+11, stmt_name, &__SQL_mod_123456094600954997, "SQLMX_DEFAULT_STATEMENT_7"
 #line 121 "C:\\ABM\\T3\\src\\p3c.ec"
 ,0, 0, 
 #line 121 "C:\\ABM\\T3\\src\\p3c.ec"
@@ -2924,14 +2921,14 @@ static struct SQLCLI_OBJ_ID __SQL_id0 = {
 #line 121 "C:\\ABM\\T3\\src\\p3c.ec"
 static struct SQLCLI_OBJ_ID __SQL_id1 = {
 #line 121 "C:\\ABM\\T3\\src\\p3c.ec"
-11, desc_name, &__SQL_mod_123456095523554733, 
+11, desc_name, &__SQL_mod_123456094600954997, 
 "SQLMX_DEFAULT_STATEMENT_7_0_IVAR",0, 0, 
 #line 121 "C:\\ABM\\T3\\src\\p3c.ec"
 32, 0, 0};
 #line 121 "C:\\ABM\\T3\\src\\p3c.ec"
 static struct SQLCLI_OBJ_ID __SQL_id2 = {
 #line 121 "C:\\ABM\\T3\\src\\p3c.ec"
-11, desc_name, &__SQL_mod_123456095523554733, 
+11, desc_name, &__SQL_mod_123456094600954997, 
 "SQLMX_DEFAULT_STATEMENT_7_0_OVAR",0, 0, 
 #line 121 "C:\\ABM\\T3\\src\\p3c.ec"
 32, 0, 0};
@@ -2960,17 +2957,13 @@ SQL_EXEC_GetCSQLSTATE(SQLSTATE,SQLCODE);}
                break;
                case ROW_NOT_FOUND:
 
-                  printf("Employee record: %d not in the database\n", 
-#line 140 "C:\\ABM\\T3\\src\\p3c.ec"
-input_empnum);
+                  printf("Employee record: %d not in the database\n", input_empnum);
                   printf("\n");
 
                   break;
 
               default:
-                printf("Error in retrieving employee record: %d\n", 
-#line 146 "C:\\ABM\\T3\\src\\p3c.ec"
-input_empnum);
+                printf("Error in retrieving employee record: %d\n", input_empnum);
                 printf("\n");
 
                 break;
@@ -2979,11 +2972,11 @@ input_empnum);
          }
        }
 /* End of source code */
-SQLMODULE_ID __SQL_mod_123456095523554733 = {
+SQLMODULE_ID __SQL_mod_123456094600954997 = {
 /* version */    	11,
 /* filler1 */    	{0,0,0,0},
 /* module name */	"SAMDBCAT.PERSNL.LAB2",
-/* timestamp */  	123456095523554733,
+/* timestamp */  	123456094600954997,
 /* char set */   	"ISO88591",
 /* name len */   	20,
 /* filler2 */    	{0,0,0,0},
@@ -2994,7 +2987,7 @@ SQLMODULE_ID __SQL_mod_123456095523554733 = {
 /* #pragma sql module identification function */
 
 unsigned char* 
-C__ABM_T3_src_p3c_c123456095523554733()
+C__ABM_T3_src_p3c_c123456094600954997()
 {
  static unsigned char buffer[] = {
  45,45,66,69,71,73,78,95,83,81,76,47,77,88,43
@@ -3009,7 +3002,7 @@ C__ABM_T3_src_p3c_c123456095523554733()
  ,100,32,69,110,116,101,114,112,114,105,115,101,32,78,111
  ,110,83,116,111,112,40,84,77,41,32,83,81,76,47,77
  ,88,32,67,47,67,43,43,32,80,114,101,112,114,111,99
- ,101,115,115,111,114,32,51,46,56,46,50,32,103,101,110
+ ,101,115,115,111,114,32,51,46,57,46,49,32,103,101,110
  ,101,114,97,116,101,100,32,109,111,100,117,108,101,32,100
  ,101,102,105,110,105,116,105,111,110,32,102,105,108,101,46
  ,10,10,77,79,68,85,76,69,32,83,65,77,68,66,67
@@ -3017,7 +3010,7 @@ C__ABM_T3_src_p3c_c123456095523554733()
  ,78,65,77,69,83,32,65,82,69,32,73,83,79,56,56
  ,53,57,49,59,10,84,73,77,69,83,84,65,77,80,32
  ,68,69,70,73,78,73,84,73,79,78,32,40,49,50,51
- ,52,53,54,48,57,53,53,50,51,53,53,52,55,51,51
+ ,52,53,54,48,57,52,54,48,48,57,53,52,57,57,55
  ,41,59,10,83,79,85,82,67,69,95,70,73,76,69,32
  ,39,92,92,92,67,58,92,65,66,77,92,84,51,92,115
  ,114,99,92,112,51,99,46,101,99,39,59,10,10,45,45
@@ -3154,4 +3147,4 @@ C__ABM_T3_src_p3c_c123456095523554733()
  ,92,93,64,63,60,61,62,59,58,46,44,40,41,39,37
  ,36,35,33 };
  return buffer;
-} /*C__ABM_T3_src_p3c_c123456095523554733*/
+} /*C__ABM_T3_src_p3c_c123456094600954997*/
