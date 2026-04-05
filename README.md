@@ -4,8 +4,8 @@ with Nonstop C/C++ Cross Compiler & VS CODE as EDITOR & git for local repository
 Part-1 
 Nonstop C/C++ Cross Compiler on Windows;
 Build HelloWorld program;
-Deploy HelloWorld;
-Run HelloWorld
+Deploy HelloWorld program;
+Run HelloWorld program
 
 Part-2
 CYGWIN (make) on Windows;
