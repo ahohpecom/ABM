@@ -2690,8 +2690,8 @@ SQLCLI_LIB_FUNC Int32 SQL_EXEC_SetSessionInfo(SQLSESSION_INFO* info);
 #pragma nowarn
 static long __SQL_internal_retcode;
 #pragma pop warn
-extern SQLMODULE_ID __SQL_mod_123456095037089483;
-#line 1 "C:\\ABM\\T3\\src\\p3c.ec"
+extern SQLMODULE_ID __SQL_mod_123456091462969012;
+#line 1 "c:\\ABM\\T3\\src\\p3c.ec"
 
 /***************************************************** 
 *              SQL/MX Programming Class              * 
@@ -2720,17 +2720,17 @@ void process_query (void);
 /*   Global host variable declarations               */
 
  /* EXEC SQL MODULE SAMDBCAT.PERSNL.LAB2 NAMES ARE ISO88591; */
-#line 29 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 29 "c:\\ABM\\T3\\src\\p3c.ec"
 
  /* EXEC SQL DECLARE NAMETYPE 'ANSI'; */
-#line 31 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 31 "c:\\ABM\\T3\\src\\p3c.ec"
  
  /* EXEC SQL DECLARE SCHEMA 'SAMDBCAT.PERSNL'; */
-#line 33 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 33 "c:\\ABM\\T3\\src\\p3c.ec"
 
 
  /* EXEC SQL BEGIN DECLARE SECTION; */
-#line 36 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 36 "c:\\ABM\\T3\\src\\p3c.ec"
 
  long   SQLCODE;
  char SQLSTATE[6];
@@ -2752,13 +2752,13 @@ struct  job_rec{
  };
 
 
-#line 51 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 51 "c:\\ABM\\T3\\src\\p3c.ec"
  struct job_rec job_rec1;
 
  int emp_jobcode;
 
 /* EXEC SQL END DECLARE SECTION; */
-#line 56 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 56 "c:\\ABM\\T3\\src\\p3c.ec"
 
  int count;
 
@@ -2774,49 +2774,49 @@ int main (void)
    SQLSTATE[5] = '\0';
 
    /* EXEC SQL BEGIN WORK; */
-#line 70 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 70 "c:\\ABM\\T3\\src\\p3c.ec"
 {
-#line 70 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 70 "c:\\ABM\\T3\\src\\p3c.ec"
 static struct SQLCLI_OBJ_ID __SQL_id0 = {
-#line 70 "C:\\ABM\\T3\\src\\p3c.ec"
-11, stmt_name, &__SQL_mod_123456095037089483, "SQLMX_DEFAULT_STATEMENT_4"
-#line 70 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 70 "c:\\ABM\\T3\\src\\p3c.ec"
+11, stmt_name, &__SQL_mod_123456091462969012, "SQLMX_DEFAULT_STATEMENT_4"
+#line 70 "c:\\ABM\\T3\\src\\p3c.ec"
 ,0, 0, 
-#line 70 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 70 "c:\\ABM\\T3\\src\\p3c.ec"
 25, 0, 0};
-#line 70 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 70 "c:\\ABM\\T3\\src\\p3c.ec"
 if (SQLCODE = SQL_EXEC_ClearExecFetchClose(&__SQL_id0,0,0,0,0,0))
-#line 70 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 70 "c:\\ABM\\T3\\src\\p3c.ec"
 {}
-#line 70 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 70 "c:\\ABM\\T3\\src\\p3c.ec"
 
-#line 70 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 70 "c:\\ABM\\T3\\src\\p3c.ec"
 SQL_EXEC_GetCSQLSTATE(SQLSTATE,SQLCODE);}
-#line 70 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 70 "c:\\ABM\\T3\\src\\p3c.ec"
 
 
    process_query ();
 
    /* EXEC SQL COMMIT WORK; */
-#line 74 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 74 "c:\\ABM\\T3\\src\\p3c.ec"
 {
-#line 74 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 74 "c:\\ABM\\T3\\src\\p3c.ec"
 static struct SQLCLI_OBJ_ID __SQL_id0 = {
-#line 74 "C:\\ABM\\T3\\src\\p3c.ec"
-11, stmt_name, &__SQL_mod_123456095037089483, "SQLMX_DEFAULT_STATEMENT_5"
-#line 74 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 74 "c:\\ABM\\T3\\src\\p3c.ec"
+11, stmt_name, &__SQL_mod_123456091462969012, "SQLMX_DEFAULT_STATEMENT_5"
+#line 74 "c:\\ABM\\T3\\src\\p3c.ec"
 ,0, 0, 
-#line 74 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 74 "c:\\ABM\\T3\\src\\p3c.ec"
 25, 0, 0};
-#line 74 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 74 "c:\\ABM\\T3\\src\\p3c.ec"
 if (SQLCODE = SQL_EXEC_ClearExecFetchClose(&__SQL_id0,0,0,0,0,0))
-#line 74 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 74 "c:\\ABM\\T3\\src\\p3c.ec"
 {}
-#line 74 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 74 "c:\\ABM\\T3\\src\\p3c.ec"
 
-#line 74 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 74 "c:\\ABM\\T3\\src\\p3c.ec"
 SQL_EXEC_GetCSQLSTATE(SQLSTATE,SQLCODE);}
-#line 74 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 74 "c:\\ABM\\T3\\src\\p3c.ec"
 
 
    printf("For this query session, %d employees records are found \n",count);
@@ -2834,12 +2834,12 @@ SQL_EXEC_GetCSQLSTATE(SQLSTATE,SQLCODE);}
    void process_query (void)
    {
       /* EXEC SQL BEGIN DECLARE SECTION; */
-#line 91 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 91 "c:\\ABM\\T3\\src\\p3c.ec"
 
       int input_empnum;
 
       /* EXEC SQL END DECLARE SECTION; */
-#line 95 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 95 "c:\\ABM\\T3\\src\\p3c.ec"
 
 
       printf("Enter employee number (ctrl-y terminates) ");
@@ -2856,42 +2856,42 @@ SQL_EXEC_GetCSQLSTATE(SQLSTATE,SQLCODE);}
              FROM employee
              WHERE empnum = :input_empnum
            ; */
-#line 102 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 102 "c:\\ABM\\T3\\src\\p3c.ec"
 {
-#line 102 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 102 "c:\\ABM\\T3\\src\\p3c.ec"
 static struct SQLCLI_OBJ_ID __SQL_id0 = {
-#line 102 "C:\\ABM\\T3\\src\\p3c.ec"
-11, stmt_name, &__SQL_mod_123456095037089483, "SQLMX_DEFAULT_STATEMENT_6"
-#line 102 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 102 "c:\\ABM\\T3\\src\\p3c.ec"
+11, stmt_name, &__SQL_mod_123456091462969012, "SQLMX_DEFAULT_STATEMENT_6"
+#line 102 "c:\\ABM\\T3\\src\\p3c.ec"
 ,0, 0, 
-#line 102 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 102 "c:\\ABM\\T3\\src\\p3c.ec"
 25, 0, 0};
-#line 102 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 102 "c:\\ABM\\T3\\src\\p3c.ec"
 static struct SQLCLI_OBJ_ID __SQL_id1 = {
-#line 102 "C:\\ABM\\T3\\src\\p3c.ec"
-11, desc_name, &__SQL_mod_123456095037089483, 
+#line 102 "c:\\ABM\\T3\\src\\p3c.ec"
+11, desc_name, &__SQL_mod_123456091462969012, 
 "SQLMX_DEFAULT_STATEMENT_6_0_IVAR",0, 0, 
-#line 102 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 102 "c:\\ABM\\T3\\src\\p3c.ec"
 32, 0, 0};
-#line 102 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 102 "c:\\ABM\\T3\\src\\p3c.ec"
 static struct SQLCLI_OBJ_ID __SQL_id2 = {
-#line 102 "C:\\ABM\\T3\\src\\p3c.ec"
-11, desc_name, &__SQL_mod_123456095037089483, 
+#line 102 "c:\\ABM\\T3\\src\\p3c.ec"
+11, desc_name, &__SQL_mod_123456091462969012, 
 "SQLMX_DEFAULT_STATEMENT_6_0_OVAR",0, 0, 
-#line 102 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 102 "c:\\ABM\\T3\\src\\p3c.ec"
 32, 0, 0};
-#line 102 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 102 "c:\\ABM\\T3\\src\\p3c.ec"
 if (SQLCODE = SQL_EXEC_ClearExecFetchClose(&__SQL_id0,&__SQL_id1,
 &__SQL_id2,1,4,5,&(input_empnum),0,&(employee_rec.empnum),0,
 &(employee_rec.first_name[0]),0,&(employee_rec.last_name[0]),0,
 &(emp_jobcode),0))
-#line 102 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 102 "c:\\ABM\\T3\\src\\p3c.ec"
 {}
-#line 102 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 102 "c:\\ABM\\T3\\src\\p3c.ec"
 
-#line 102 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 102 "c:\\ABM\\T3\\src\\p3c.ec"
 SQL_EXEC_GetCSQLSTATE(SQLSTATE,SQLCODE);}
-#line 110 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 110 "c:\\ABM\\T3\\src\\p3c.ec"
 
 
          NULL_TERMINATE(employee_rec.first_name);
@@ -2908,40 +2908,40 @@ SQL_EXEC_GetCSQLSTATE(SQLSTATE,SQLCODE);}
                   FROM job
                   WHERE jobcode = :emp_jobcode
                 ; */
-#line 121 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 121 "c:\\ABM\\T3\\src\\p3c.ec"
 {
-#line 121 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 121 "c:\\ABM\\T3\\src\\p3c.ec"
 static struct SQLCLI_OBJ_ID __SQL_id0 = {
-#line 121 "C:\\ABM\\T3\\src\\p3c.ec"
-11, stmt_name, &__SQL_mod_123456095037089483, "SQLMX_DEFAULT_STATEMENT_7"
-#line 121 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 121 "c:\\ABM\\T3\\src\\p3c.ec"
+11, stmt_name, &__SQL_mod_123456091462969012, "SQLMX_DEFAULT_STATEMENT_7"
+#line 121 "c:\\ABM\\T3\\src\\p3c.ec"
 ,0, 0, 
-#line 121 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 121 "c:\\ABM\\T3\\src\\p3c.ec"
 25, 0, 0};
-#line 121 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 121 "c:\\ABM\\T3\\src\\p3c.ec"
 static struct SQLCLI_OBJ_ID __SQL_id1 = {
-#line 121 "C:\\ABM\\T3\\src\\p3c.ec"
-11, desc_name, &__SQL_mod_123456095037089483, 
+#line 121 "c:\\ABM\\T3\\src\\p3c.ec"
+11, desc_name, &__SQL_mod_123456091462969012, 
 "SQLMX_DEFAULT_STATEMENT_7_0_IVAR",0, 0, 
-#line 121 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 121 "c:\\ABM\\T3\\src\\p3c.ec"
 32, 0, 0};
-#line 121 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 121 "c:\\ABM\\T3\\src\\p3c.ec"
 static struct SQLCLI_OBJ_ID __SQL_id2 = {
-#line 121 "C:\\ABM\\T3\\src\\p3c.ec"
-11, desc_name, &__SQL_mod_123456095037089483, 
+#line 121 "c:\\ABM\\T3\\src\\p3c.ec"
+11, desc_name, &__SQL_mod_123456091462969012, 
 "SQLMX_DEFAULT_STATEMENT_7_0_OVAR",0, 0, 
-#line 121 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 121 "c:\\ABM\\T3\\src\\p3c.ec"
 32, 0, 0};
-#line 121 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 121 "c:\\ABM\\T3\\src\\p3c.ec"
 if (SQLCODE = SQL_EXEC_ClearExecFetchClose(&__SQL_id0,&__SQL_id1,
 &__SQL_id2,1,1,2,&(emp_jobcode),0,&(job_rec1.jobdesc[0]),0))
-#line 121 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 121 "c:\\ABM\\T3\\src\\p3c.ec"
 {}
-#line 121 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 121 "c:\\ABM\\T3\\src\\p3c.ec"
 
-#line 121 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 121 "c:\\ABM\\T3\\src\\p3c.ec"
 SQL_EXEC_GetCSQLSTATE(SQLSTATE,SQLCODE);}
-#line 125 "C:\\ABM\\T3\\src\\p3c.ec"
+#line 125 "c:\\ABM\\T3\\src\\p3c.ec"
 
 
 
@@ -2972,11 +2972,11 @@ SQL_EXEC_GetCSQLSTATE(SQLSTATE,SQLCODE);}
          }
        }
 /* End of source code */
-SQLMODULE_ID __SQL_mod_123456095037089483 = {
+SQLMODULE_ID __SQL_mod_123456091462969012 = {
 /* version */    	11,
 /* filler1 */    	{0,0,0,0},
 /* module name */	"SAMDBCAT.PERSNL.LAB2",
-/* timestamp */  	123456095037089483,
+/* timestamp */  	123456091462969012,
 /* char set */   	"ISO88591",
 /* name len */   	20,
 /* filler2 */    	{0,0,0,0},
@@ -2987,7 +2987,7 @@ SQLMODULE_ID __SQL_mod_123456095037089483 = {
 /* #pragma sql module identification function */
 
 unsigned char* 
-C__ABM_T3_src_p3c_c123456095037089483()
+c__ABM_T3_p3c_c123456091462969012()
 {
  static unsigned char buffer[] = {
  45,45,66,69,71,73,78,95,83,81,76,47,77,88,43
@@ -3010,9 +3010,9 @@ C__ABM_T3_src_p3c_c123456095037089483()
  ,78,65,77,69,83,32,65,82,69,32,73,83,79,56,56
  ,53,57,49,59,10,84,73,77,69,83,84,65,77,80,32
  ,68,69,70,73,78,73,84,73,79,78,32,40,49,50,51
- ,52,53,54,48,57,53,48,51,55,48,56,57,52,56,51
+ ,52,53,54,48,57,49,52,54,50,57,54,57,48,49,50
  ,41,59,10,83,79,85,82,67,69,95,70,73,76,69,32
- ,39,92,92,92,67,58,92,65,66,77,92,84,51,92,115
+ ,39,92,92,92,99,58,92,65,66,77,92,84,51,92,115
  ,114,99,92,112,51,99,46,101,99,39,59,10,10,45,45
  ,45,45,45,45,45,45,45,32,83,84,65,84,69,77,69
  ,78,84,32,73,78,68,69,88,32,48,32,45,45,45,45
@@ -3147,4 +3147,4 @@ C__ABM_T3_src_p3c_c123456095037089483()
  ,92,93,64,63,60,61,62,59,58,46,44,40,41,39,37
  ,36,35,33 };
  return buffer;
-} /*C__ABM_T3_src_p3c_c123456095037089483*/
+} /*c__ABM_T3_p3c_c123456091462969012*/
