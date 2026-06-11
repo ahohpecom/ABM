@@ -1,3 +1,8 @@
 git config --global user.name "ahohpecom"
 git config --global user.email "aho@hpe.com"
 git config --global init.defaultBranch main
+
+git remote show origin
+git remote -v
+git config --get remote.origin.url
+
